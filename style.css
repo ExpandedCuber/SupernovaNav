@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('supernova.mp4');
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nav {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: white;
+}
+
+li {
+    position: absolute;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+
+@keyframes textScale {
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+li:hover {
+    animation: textScale 0.2s;
+}
+
+#link1 {
+    left: 10%;
+    top: 20%;
+}
+
+#link2 {
+    left: 20%;
+    top: 50%;
+}
+
+#link3 {
+    top: 5%;
+    right: 5%;
+}
+
+#link4 {
+    top: 60%;
+    right: 30%;
+}
